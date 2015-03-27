@@ -14,7 +14,7 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return 'Ciaran is cool';
+  return 'Ciaran is no longer';
 });
 
 $app->run();
